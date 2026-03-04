@@ -1,0 +1,165 @@
+body {
+    margin: 0;
+    padding: 20px;
+    background-color: lightblue;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    
+    text-align: center;
+    font-size: 20px;
+    background-color: darkgoldenrod;
+}
+
+.container {
+    margin-top: 10%;
+    width: 100%;
+    max-width: 480px;
+}
+
+.main-card {
+    background: white;
+    border: 6px solid darkgoldenrod;
+    border-radius: 20px;
+    padding: 20px 24px;
+}
+
+.search-section {
+    text-align: center;
+    margin-bottom: 10px;
+}
+.search-section label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+.search-row {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+}
+.search-row input {
+    padding: 4px 8px;
+    font-size: 14px;
+    border: 1px solid #999;
+    width: 240px;
+}
+.search-row button {
+    padding: 4px 14px;
+    font-size: 14px;
+    background: lightgray;
+    border: 1px solid #999;
+    cursor: pointer;
+}
+.search-row button:hover {
+    background: lightblue;
+}
+
+#error-msg {
+    display: none;
+    color: red;
+    text-align: center;
+    font-size: 13px;
+    margin: 4px 0;
+}
+
+#sprite-area {
+    text-align: center;
+    min-height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 4px 0;
+}
+#sprite-area img {
+    width: 200px;
+    height: 200px;
+    image-rendering: pixelated;
+    object-fit: contain;
+}
+#sprite-area .placeholder {
+    color: #aaa;
+    font-size: 13px;
+}
+
+#audio-area {
+    display: none;
+    text-align: center;
+    margin: 6px 0 10px;
+}
+#audio-area audio {
+    width: 100%;
+    max-width: 340px;
+}
+
+#moves-area {
+    display: none;
+    margin: 8px 0;
+}
+.moves-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    max-width: 380px;
+    margin: 0 auto;
+}
+.moves-grid select {
+    width: 100%;
+    padding: 4px 6px;
+    font-size: 13px;
+    border: 1px solid #999;
+    background: white;
+    text-transform: capitalize;
+}
+
+#add-area {
+    display: none;
+    text-align: center;
+    margin: 10px 0;
+}
+#add-area button {
+    padding: 4px 16px;
+    font-size: 14px;
+    background: lightgray;
+    border: 1px solid #999;
+    cursor: pointer;
+}
+#add-area button:hover {
+    background: lightblue;
+}
+
+#team-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 4px;
+}
+#team-table td {
+    border: 1px solid #333;
+    padding: 6px 10px;
+    vertical-align: middle;
+}
+.td-sprite {
+    width: 90px;
+    text-align: center;
+}
+.td-sprite img {
+    width: 80px;
+    height: 80px;
+    image-rendering: pixelated;
+    object-fit: contain;
+}
+.td-moves ul {
+    margin: 0;
+    padding-left: 22px;
+}
+.td-moves li {
+    font-size: 13px;
+    text-transform: capitalize;
+    margin: 2px 0;
+}
